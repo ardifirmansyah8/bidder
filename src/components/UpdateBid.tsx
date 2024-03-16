@@ -27,7 +27,7 @@ import { useUpdateBid } from "@/hooks/useDataBids";
 type Props = {
   id?: number;
   btnText: string;
-  data: { id: string; price: number };
+  data: { id: number; price: number };
   refetch: () => void;
 };
 
