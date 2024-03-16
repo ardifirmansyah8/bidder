@@ -12,7 +12,7 @@ export type CollectionStatus = "pending" | "sold";
 
 export interface Bid {
   id: number;
-  collection_id: string;
+  collection_id: number;
   price: number;
   user_id: number;
   status: BidStatus;

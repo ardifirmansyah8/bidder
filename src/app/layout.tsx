@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { CookiesProvider } from "next-client-cookies/server";
 
 import Providers from "./providers";
 import { Toaster } from "@/components/ui/toaster";
@@ -23,12 +24,14 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         <Providers>
-          <Toaster />
-          <header className="p-4 text-lg bg-white font-bold border-b border-gray-400 shadow-sm fixed w-full flex justify-between">
-            <div>Bidder</div>
-            <SelectUsers />
-          </header>
-          {children}
+          <CookiesProvider>
+            <Toaster />
+            <header className="p-4 text-lg bg-white font-bold border-b border-gray-400 shadow-sm fixed w-full flex justify-between">
+              <div>Bidder</div>
+              <SelectUsers />
+            </header>
+            {children}
+          </CookiesProvider>
         </Providers>
       </body>
     </html>
