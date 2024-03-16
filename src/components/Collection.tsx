@@ -7,10 +7,10 @@ import Bids from "./Bids";
 import DeleteCollection from "./DeleteCollection";
 import UpdateBid from "./UpdateBid";
 import UpdateCollection from "./UpdateCollection";
-import { Collection } from "@/types";
+import { Collection as CollectionType } from "@/types";
 
 type Props = {
-  data: Collection;
+  data: CollectionType;
   refetch: () => void;
 };
 
