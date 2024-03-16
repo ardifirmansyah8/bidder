@@ -5,7 +5,7 @@ import { useCookies } from "next-client-cookies";
 import CancelBid from "./CancelBid";
 import UpdateBid from "./UpdateBid";
 import RejectBid from "./RejectBid";
-import ApproveBid from "./ApproveBid";
+import AcceptBid from "./AcceptBid";
 import { cn } from "@/lib/utils";
 import { Bid, Collection } from "@/types";
 
@@ -54,7 +54,7 @@ export default function BidItem({
       <div className="flex gap-4">
         {isCollectionOwner && !isSold && !isAccepted && !isRejected && (
           <>
-            <ApproveBid dataBid={data} dataCollection={collection} />
+            <AcceptBid dataBid={data} dataCollection={collection} />
             <RejectBid data={data} refetch={refetch} />
           </>
         )}

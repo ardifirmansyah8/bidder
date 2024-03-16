@@ -19,7 +19,7 @@ type Props = {
   dataBid: Bid;
 };
 
-export default function ApproveBid({ dataCollection, dataBid }: Props) {
+export default function AcceptBid({ dataCollection, dataBid }: Props) {
   const {
     mutate: mutateBid,
     isLoading: loadingBid,
@@ -51,7 +51,7 @@ export default function ApproveBid({ dataCollection, dataBid }: Props) {
   return (
     <Dialog open={isOpen} onOpenChange={setIsOpen}>
       <DialogTrigger asChild>
-        <Button>Approve</Button>
+        <Button>Accept</Button>
       </DialogTrigger>
       <DialogContent>
         <DialogHeader>
@@ -70,7 +70,7 @@ export default function ApproveBid({ dataCollection, dataBid }: Props) {
             onClick={() =>
               mutateBid({
                 id: dataBid.id,
-                data: { ...dataBid, status: "approved" },
+                data: { ...dataBid, status: "accepted" },
               })
             }
           >
