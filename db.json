@@ -1,0 +1,161 @@
+{
+  "collections": [
+    {
+      "id": 1,
+      "name": "Collection 1",
+      "description": "This is a collection of items",
+      "stocks": 4,
+      "price": 17,
+      "user_id": 1,
+      "status": "sold"
+    },
+    {
+      "id": 2,
+      "name": "Collection 2",
+      "description": "This is a collection of items",
+      "stocks": 9,
+      "price": 16,
+      "user_id": 1,
+      "status": "sold"
+    },
+    {
+      "id": 3,
+      "name": "Collection 3",
+      "description": "This is a collection of items",
+      "stocks": 4,
+      "price": 16,
+      "user_id": 1,
+      "status": "pending"
+    },
+    {
+      "id": 4,
+      "name": "Collection 4",
+      "description": "This is a collection of items",
+      "stocks": 9,
+      "price": 14,
+      "user_id": 2,
+      "status": "pending"
+    },
+    {
+      "id": 5,
+      "name": "Collection 5",
+      "description": "This is a collection of items",
+      "stocks": 9,
+      "price": 14,
+      "user_id": 2,
+      "status": "pending"
+    },
+    {
+      "name": "test",
+      "description": "testing",
+      "stocks": 1,
+      "price": 10,
+      "user_id": 1,
+      "status": "pending",
+      "id": 6
+    }
+  ],
+  "bids": [
+    {
+      "id": 1,
+      "collection_id": 4,
+      "price": 1,
+      "user_id": 5,
+      "status": "pending"
+    },
+    {
+      "id": 2,
+      "collection_id": 1,
+      "price": 50,
+      "user_id": 2,
+      "status": "accepted"
+    },
+    {
+      "id": 3,
+      "collection_id": 1,
+      "price": 1,
+      "user_id": 3,
+      "status": "pending"
+    },
+    {
+      "id": 4,
+      "collection_id": 5,
+      "price": 1,
+      "user_id": 41,
+      "status": "pending"
+    },
+    {
+      "id": 5,
+      "collection_id": 2,
+      "price": 1,
+      "user_id": 5,
+      "status": "approved"
+    },
+    {
+      "collection_id": 5,
+      "price": 16,
+      "user_id": 1,
+      "status": "pending",
+      "id": 6
+    },
+    {
+      "collection_id": 5,
+      "price": 15,
+      "user_id": 1,
+      "status": "pending",
+      "id": 8
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "User 1",
+      "email": "branchriley@jasper.com"
+    },
+    {
+      "id": 2,
+      "name": "User 2",
+      "email": "branchriley@jasper.com"
+    },
+    {
+      "id": 3,
+      "name": "User 3",
+      "email": "branchriley@jasper.com"
+    },
+    {
+      "id": 4,
+      "name": "User 4",
+      "email": "branchriley@jasper.com"
+    },
+    {
+      "id": 5,
+      "name": "User 5",
+      "email": "branchriley@jasper.com"
+    },
+    {
+      "id": 6,
+      "name": "User 6",
+      "email": "branchriley@jasper.com"
+    },
+    {
+      "id": 7,
+      "name": "User 7",
+      "email": "branchriley@jasper.com"
+    },
+    {
+      "id": 8,
+      "name": "User 8",
+      "email": "branchriley@jasper.com"
+    },
+    {
+      "id": 9,
+      "name": "User 9",
+      "email": "branchriley@jasper.com"
+    },
+    {
+      "id": 10,
+      "name": "User 10",
+      "email": "branchriley@jasper.com"
+    }
+  ]
+}
