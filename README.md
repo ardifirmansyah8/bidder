@@ -38,10 +38,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## Questions
 
 - How would you monitor the application to ensure it is running smoothly?
-  => Usually,i'm using New Relic or Sentry to monitor my application
+  Usually,i'm using New Relic or Sentry to monitor my application
 
 - How would you address scalability and performance?
-  =>
 
 1. Coding style.
 2. Code structure.
@@ -49,7 +48,6 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 4. Use a version control system and a code review process.
 
 - Trade-offs you had to choose when doing this challenge (the things you would do different with more time and resources)
-  =>
 
 1. Create more data samples
 2. Add infinite scrolling
