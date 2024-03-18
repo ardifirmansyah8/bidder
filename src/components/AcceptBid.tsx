@@ -40,6 +40,7 @@ export default function AcceptBid({ dataCollection, dataBid }: Props) {
         data: { ...dataCollection, status: "sold" },
       });
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [successBid]);
 
   useEffect(() => {

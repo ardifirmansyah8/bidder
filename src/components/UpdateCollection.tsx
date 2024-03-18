@@ -81,12 +81,14 @@ export default function UpdateCollection({
       setIsOpen(false);
       form.reset();
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isSuccess]);
 
   useEffect(() => {
     if (data) {
       form.reset(data);
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data]);
 
   return (

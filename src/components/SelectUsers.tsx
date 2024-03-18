@@ -10,6 +10,7 @@ import {
   SelectValue,
 } from "./ui/select";
 import { useFetchUsers } from "@/hooks/useUsers";
+import { useEffect } from "react";
 
 export default function SelectUsers() {
   const cookies = useCookies();
@@ -22,6 +23,14 @@ export default function SelectUsers() {
     cookies.set("user_id", val);
     window.location.reload();
   };
+
+  useEffect(() => {
+    if (!userId && data?.length) {
+      cookies.set("user_id", data[0].id.toString());
+      window.location.reload();
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [data, userId])
 
   return (
     <Select defaultValue={userId} onValueChange={(val) => onUserChange(val)}>

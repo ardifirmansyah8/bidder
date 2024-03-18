@@ -26,6 +26,7 @@ export default function CancelBid({ id, refetch }: Props) {
     if (isSuccess) {
       refetch();
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isSuccess]);
 
   return (
